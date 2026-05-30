@@ -303,3 +303,88 @@ Oooo so shiny. I really hope I won't have to change this hotend much at all. I c
 Next is when things get harder. Ducts, making things fit. Bleh.
 
 **Total time spent: 3.5 hours**
+
+
+# May 28: Beginning of Duct Design
+
+Hey guys, I am back from working on my burnout rocket. I wasn't really feeling this project and got an opportunity to make a cool rocket, so I jumped on that.
+
+Regardless, duct design. I design my ducts by making cross section sketches and placing them along the path I want. Others may do it differently, and that is ok.
+One thing I will be doing different this time is using CFD!
+
+<img width="1247" height="1149" alt="image" src="https://github.com/user-attachments/assets/73e1783d-035b-4a1b-951c-e4172fdf81fc" />
+
+I made a ton of sketches, lofted, sketched, lofted, adjusted, lofted, etc for hours. 
+
+Eventually I boiled it down to the three sketches shown in that photo, attached to a blocky base with rail mounting. This went through a lot of variations that I ultimately didn't get many photos of. The issue is I am super space constrained - the ducts are practically touching the halo in one of the far corners. So I really had to watch my routing. 
+
+<img width="948" height="1082" alt="image" src="https://github.com/user-attachments/assets/8dc95ca3-c8ee-4fcb-aa7f-fb6fa8f227d6" />
+
+Once I had the duct I was happy with, I mirrored it and added holes through the mounting block. From there I then added bracing to the bottom for the hotend. 
+
+<img width="750" height="729" alt="image" src="https://github.com/user-attachments/assets/dd1024e2-ed2e-4b20-8dcb-9246835ab346" />
+
+I will be honest, this is looking pretty rough, but it's all part of the process. 
+
+After talking with some friends they told me that having that much material on the bracing was a bad idea as it will steal heat from the hotend block. In hindsight, that makes sense, but I was just hoping it wouldn't be an issue. 
+
+<img width="976" height="787" alt="image" src="https://github.com/user-attachments/assets/da0d70ee-766c-4900-8f76-0bc5aeee269d" />
+
+So I cut down on material. This is looking a lot better! 
+
+<img width="1281" height="603" alt="image" src="https://github.com/user-attachments/assets/74115869-2ce1-4ae3-9e9f-20403903ef8f" />
+
+After staring at it long enough I realized I could smooth out my duct by redoing the lofts. 
+
+<img width="786" height="859" alt="image" src="https://github.com/user-attachments/assets/29cf5344-b5c0-496e-9619-a371d6a8bbe8" />
+
+This duct is way better looking and more importantly will be way less turbulent for air. I am also hoping that by adding the swoop it will direct air better.
+This is all I did for now - I have one thing I need to do next before I can continue duct design. And that is... CFD flow testing the current setup to see how it performs! I will be using simscale and detailing that in my next entry. 
+
+**Total time spent: 5 hours**
+
+
+# May 29: Continuing Duct Design
+
+So you know how I said the next entry would be CFD? It isn't quite that yet. I decided to fix the blocky mounting situation first as I wasn't a fan of it at all.
+
+<img width="951" height="856" alt="image" src="https://github.com/user-attachments/assets/86d14377-815c-47cd-88cd-5a20276dc7a2" />
+
+I started by taking some cutouts to smooth things out. Fillets and cutouts. You want to try and avoid material concentrations with SLM because they are what induce warping. 
+
+<img width="567" height="854" alt="image" src="https://github.com/user-attachments/assets/77709cb1-6648-421d-9998-5ed7793fb4df" />
+
+More cutouts... 
+
+<img width="844" height="897" alt="image" src="https://github.com/user-attachments/assets/9d5f1665-f897-47f2-ab68-c685756e990b" />
+
+It's looking alright! But it could be better. 
+I realized - I don't need any straight section at all! I can have one continuous loft and make everything way more organic feeling. 
+
+<img width="593" height="1091" alt="image" src="https://github.com/user-attachments/assets/58346f35-d1b7-4e8e-9d05-238c322bdf37" />
+
+So I did that and it all looks way better! 
+
+<img width="1505" height="1013" alt="image" src="https://github.com/user-attachments/assets/5e170159-ac15-4e59-94b3-5c8dc906e36a" />
+
+This is kinda an awkward photo gap but here I am adding rectangular stiffeners to the new sweepey ducts. These were suggested by a friend and it basically helps add material for rigidity purposes. On a machine this rigid, that means it gets rid of a lot of vibrations that could be induced by the toolhead. It also helps with hotend bracing. 
+
+<img width="1581" height="1041" alt="image" src="https://github.com/user-attachments/assets/434cad8b-b91c-4344-b5ca-dd6e3a054f52" />
+
+Much like the ducts it is a simple mirror to the other side to take care of things. 
+
+Notice the bowden clip on there? I actually cadded that myself. It is the bowden clip style E3D uses press fit into their v6 hotends - I plan to press fit it into my toolhead. 
+
+<img width="1525" height="506" alt="image" src="https://github.com/user-attachments/assets/cca5ad86-e403-4a07-9455-b52293b3f616" />
+
+You can see part of that process here. 
+
+<img width="786" height="1148" alt="image" src="https://github.com/user-attachments/assets/1f6c8dbe-88b7-4934-aac9-599d968018a8" />
+
+This leaves a cool looking toolhead that I finally feel ready to put into CFD. I will detail that... next entry. Getting this new loft working took a few more hours of tweaking layout sketches. 
+
+<img width="1098" height="1170" alt="image" src="https://github.com/user-attachments/assets/1c2f4060-f5d1-46b9-898e-206251c9f58f" />
+
+I mean, look at this nonsense! There are sooo many more sketches than I ended up using in the final version. Bleh.
+
+**Total time spent: 4.5 hours**
